@@ -1,0 +1,49 @@
+{
+  "name": "flutter-templete-feature-scaffold",
+  "displayName": "Flutter Templete Feature Scaffold",
+  "description": "Flutter Feature Generator - Quickly scaffold feature folders following clean architecture with Riverpod integration. Automatically creates models, services, providers, pages, and widgets with pre-configured boilerplate code.",
+  "version": "0.0.3",
+  "publisher": "essasabbagh",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/essasabbagh/flutter-easy-logger.git"
+  },
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "flutterFeatureScaffold.createFeature",
+        "title": "Flutter: Create Feature Scaffold"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:flutterFeatureScaffold.createFeature"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.97.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
