@@ -7,7 +7,7 @@
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
-    "url": "git://github.com/essasabbagh/flutter-easy-logger.git"
+    "url": "git://github.com/essasabbagh/flutter-templete-feature-scaffold.git"
   },
   "engines": {
     "vscode": "^1.97.0"
